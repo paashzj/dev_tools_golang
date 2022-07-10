@@ -15,23 +15,15 @@
 // specific language governing permissions and limitations
 // under the License.
 
-package main
+package simulator
 
 import (
-	"dev_tools_golang/simulator"
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/app"
+	"dev_tools_golang/simulator/pulsar"
 	"fyne.io/fyne/v2/container"
 )
 
-func main() {
-	a := app.New()
-	w := a.NewWindow("Dev Tools")
-	w.Resize(fyne.NewSize(1400, 900))
-
-	simulatorItem := container.NewTabItem("simulator", simulator.View())
+func View() *container.AppTabs {
+	simulatorItem := container.NewTabItem("pulsar", pulsar.View())
 	appTabs := container.NewAppTabs(simulatorItem)
-
-	w.SetContent(appTabs)
-	w.ShowAndRun()
+	return appTabs
 }
