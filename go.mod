@@ -3,7 +3,7 @@ module dev_tools_golang
 go 1.18
 
 require (
-	fyne.io/fyne/v2 v2.2.3
+	fyne.io/fyne/v2 v2.2.4
 	github.com/apache/pulsar-client-go v0.8.1
 	github.com/google/uuid v1.3.0
 )
