@@ -44,7 +44,7 @@ jobs:
         run: go install fyne.io/fyne/v2/cmd/fyne@latest
       - name: package exe
         run: fyne package -os windows -icon golang_logo_icon.png
-      - uses: dev-drprasad/delete-tag-and-release@v0.2.0
+      - uses: dev-drprasad/delete-tag-and-release@v0.2.1
         with:
           delete_release: true
           tag_name: latest_windows
