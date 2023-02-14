@@ -3,13 +3,13 @@ module dev_tools_golang
 go 1.18
 
 require (
-	fyne.io/fyne/v2 v2.3.0
+	fyne.io/fyne/v2 v2.3.1
 	github.com/apache/pulsar-client-go v0.8.1
 	github.com/google/uuid v1.3.0
 )
 
 require (
-	fyne.io/systray v1.10.1-0.20221115204952-d16a6177e6f1 // indirect
+	fyne.io/systray v1.10.1-0.20230207085535-4a244dbb9d03 // indirect
 	github.com/99designs/keyring v1.1.6 // indirect
 	github.com/AthenZ/athenz v1.10.39 // indirect
 	github.com/DataDog/zstd v1.5.0 // indirect
